@@ -3,9 +3,14 @@ import CardList from "./CardList";
 import { robot } from "./robot";
 import SearchBox from "./SearchBox";
 
+const state = {
+  robot: robot,
+  searchfield: "",
+};
+
 function App() {
   return (
-    <div className="text-center">
+    <div className="text-center ">
       <h1>RoboFriends</h1>
       <SearchBox />
       <CardList robots={robot} />
